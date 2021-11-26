@@ -4,14 +4,37 @@
 }
 
 .advantage__list {
-    // display: flex;
-    justify-content: space-between;
+
+    @media screen and (min-width: 768px){
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+    }
 }
 
 .advantage__item {
-    // width: 270px;
     width: 100%;
     display: block;
+    @media screen and (min-width: 768px) {
+        width: calc((100% - 2 * 15px) / 2);
+        &:nth-child(odd){
+            margin-right: 15px;
+                    }
+        &:nth-child(even){
+            margin-left: 15px;
+        }
+    }
+    @media screen and (min-width: 1200px){
+        width: calc((100% - 4 * 30px) / 4);
+        &:not(:last-child){
+            margin-right: 30px;
+                    }
+        margin-left: 0px;
+
+    }
+
+
 }
 
 .advantage-picture__zone {
@@ -22,7 +45,6 @@
     background: #f5f4fa;
     align-items: center;
     justify-content: center;
-    margin-bottom: 30px;
 }
 
 .advantage-picture {
@@ -31,12 +53,18 @@
     height: 70px;
 }
 
+.advantage__story{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
 .advantage__topic {
     font-weight: bold;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    text-align: center;
     color: var(--primary-text-color);
     margin-bottom: 10px;
 }
