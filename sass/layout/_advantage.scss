@@ -16,14 +16,15 @@
 .advantage__item {
     width: 100%;
     display: block;
+    margin-bottom: 30px;
     @media screen and (min-width: 768px) {
-        width: calc((100% - 2 * 15px) / 2);
+        width: calc((100% - 30px) / 2);
         &:nth-child(odd){
             margin-right: 30px;
                     }
     }
     @media screen and (min-width: 1200px){
-        width: calc((100% - 4 * 30px) / 4);
+        width: calc((100% - 3 * 30px) / 4);
         &:not(:last-child){
             margin-right: 30px;
                     }
@@ -51,8 +52,7 @@
 }
 
 .advantage__story{
-    padding-top: 30px;
-    padding-bottom: 30px;
+    margin-top: 30px;
 }
 
 .advantage__topic {
