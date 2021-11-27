@@ -184,54 +184,156 @@
           <h2 class="team__title">Наша команда</h2>
           <ul class="team-list list">
             <li class="team-list__item">
-              <img
-                src="./images/pers/pers.jpg"
-                alt="Работник компании"
-                width="270"
-                class="team-list__img"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/pers/team-1-desktop.webp    1x,
+                    ./images/pers/team-1-desktop@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/pers/team-1-desktop.jpg    1x,
+                    ./images/pers/team-1-desktop@2x.jpg 2x
+                  "
+                />
+
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/pers/team-1-tablet.webp    1x,
+                    ./images/pers/team-1-tablet@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/pers/team-1-tablet.jpg    1x,
+                    ./images/pers/team-1-tablet@2x.jpg 2x
+                  "
+                />
+
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/pers/team-1.webp    1x,
+                    ./images/pers/team-1@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/pers/team-1.jpg    1x,
+                    ./images/pers/team-1@2x.jpg 2x
+                  "
+                />
+
+                <img
+                  src="#"
+                  alt="Работник компании"
+                  class="team-list__img"
+                  loading="lazy"
+                />
+              </picture>
+
               <div class="team-list__pers">
                 <h3 class="team-list__name">Игорь Демьяненко</h3>
                 <p lang="en" class="team-list__position">Product Designer</p>
+                <ul class="cocial-icons list">
+                  <li class="cocial-icons__zone">
+                    <a href="" class="cocial-icons__link link">
+                      <svg class="team-icon__pic">
+                        <use href="./images/sprite.svg#icon-instagram"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="cocial-icons__zone">
+                    <a href="" class="cocial-icons__link link">
+                      <svg class="team-icon__pic">
+                        <use href="./images/sprite.svg#icon-twitter"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="cocial-icons__zone">
+                    <a href="" class="cocial-icons__link link">
+                      <svg class="team-icon__pic">
+                        <use href="./images/sprite.svg#icon-facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="cocial-icons__zone">
+                    <a href="" class="cocial-icons__link link">
+                      <svg class="team-icon__pic">
+                        <use href="./images/sprite.svg#icon-linkedin"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
               </div>
-              <ul class="cocial-icons list">
-                <li class="cocial-icons__zone">
-                  <a href="" class="cocial-icons__link link">
-                    <svg class="team-icon__pic">
-                      <use href="./images/sprite.svg#icon-instagram"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="cocial-icons__zone">
-                  <a href="" class="cocial-icons__link link">
-                    <svg class="team-icon__pic">
-                      <use href="./images/sprite.svg#icon-twitter"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="cocial-icons__zone">
-                  <a href="" class="cocial-icons__link link">
-                    <svg class="team-icon__pic">
-                      <use href="./images/sprite.svg#icon-facebook"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="cocial-icons__zone">
-                  <a href="" class="cocial-icons__link link">
-                    <svg class="team-icon__pic">
-                      <use href="./images/sprite.svg#icon-linkedin"></use>
-                    </svg>
-                  </a>
-                </li>
-              </ul>
             </li>
             <li class="team-list__item">
-              <img
-                src="./images/pers/pers1.jpg"
-                alt="Работник компании"
-                width="270"
-                class="team-list__img"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/pers/team-2-desktop.webp    1x,
+                    ./images/pers/team-2-desktop@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/pers/team-2-desktop.jpg    1x,
+                    ./images/pers/team-2-desktop@2x.jpg 2x
+                  "
+                />
+
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/pers/team-2-tablet.webp    1x,
+                    ./images/pers/team-2-tablet@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/pers/team-2-tablet.jpg    1x,
+                    ./images/pers/team-2-tablet@2x.jpg 2x
+                  "
+                />
+
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/pers/team-2.webp    1x,
+                    ./images/pers/team-2@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/pers/team-2.jpg    1x,
+                    ./images/pers/team-2@2x.jpg 2x
+                  "
+                />
+
+                <img
+                  src="#"
+                  alt="Работник компании"
+                  class="team-list__img"
+                  loading="lazy"
+                />
+              </picture>
+
               <div class="team-list__pers">
                 <h3 class="team-list__name">Ольга Репина</h3>
                 <p lang="en" class="team-list__position">Frontend Developer</p>
@@ -268,12 +370,63 @@
               </ul>
             </li>
             <li class="team-list__item">
-              <img
-                src="./images/pers/pers2.jpg"
-                alt="Работник компании"
-                width="270"
-                class="team-list__img"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/pers/team-3-desktop.webp    1x,
+                    ./images/pers/team-3-desktop@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/pers/team-3-desktop.jpg    1x,
+                    ./images/pers/team-3-desktop@2x.jpg 2x
+                  "
+                />
+
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/pers/team-3-tablet.webp    1x,
+                    ./images/pers/team-3-tablet@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/pers/team-3-tablet.jpg    1x,
+                    ./images/pers/team-3-tablet@2x.jpg 2x
+                  "
+                />
+
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/pers/team-3.webp    1x,
+                    ./images/pers/team-3@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/pers/team-3.jpg    1x,
+                    ./images/pers/team-3@2x.jpg 2x
+                  "
+                />
+
+                <img
+                  src="#"
+                  alt="Работник компании"
+                  class="team-list__img"
+                  loading="lazy"
+                />
+              </picture>
+
               <div class="team-list__pers">
                 <h3 class="team-list__name">Николай Тарасов</h3>
                 <p lang="en" class="team-list__position">Marketing</p>
@@ -310,12 +463,63 @@
               </ul>
             </li>
             <li class="team-list__item">
-              <img
-                src="./images/pers/pers3.jpg"
-                alt="Работник компании"
-                width="270"
-                class="team-list__img"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/pers/team-4-desktop.webp    1x,
+                    ./images/pers/team-4-desktop@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/pers/team-4-desktop.jpg    1x,
+                    ./images/pers/team-4-desktop@2x.jpg 2x
+                  "
+                />
+
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/pers/team-4-tablet.webp    1x,
+                    ./images/pers/team-4-tablet@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/pers/team-4-tablet.jpg    1x,
+                    ./images/pers/team-4-tablet@2x.jpg 2x
+                  "
+                />
+
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/pers/team-4.webp    1x,
+                    ./images/pers/team-4@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/pers/team-4.jpg    1x,
+                    ./images/pers/team-4@2x.jpg 2x
+                  "
+                />
+
+                <img
+                  src="#"
+                  alt="Работник компании"
+                  class="team-list__img"
+                  loading="lazy"
+                />
+              </picture>
+
               <div class="team-list__pers">
                 <h3 class="team-list__name">Михаил Ермаков</h3>
                 <p lang="en" class="team-list__position">UI Designer</p>
