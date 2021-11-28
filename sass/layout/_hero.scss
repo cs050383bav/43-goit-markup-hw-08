@@ -45,14 +45,14 @@
       (min-resolution: 2dppx) {
       background-image: url("../images/hero/hero-desktop2x.jpg");
     }
+    padding: 200px 0px;
+
   }
 }
 
-.hero-wall {
-  background: #c4c4c4;
-}
 
 .hero__title {
+  font-family: Roboto;
   font-weight: 900;
   font-size: 21px;
   line-height: 1.62;
