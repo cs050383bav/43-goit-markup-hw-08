@@ -10,19 +10,17 @@
   margin-bottom: 60px;
 
   @media screen and (min-width: 768px) {
-    margin-right: 165px;
   }
   @media screen and (min-width: 1200px) {
     margin-right: 70px;
     margin-bottom: 0;
-}
+  }
 }
 .footer-data {
-    text-align: center;
-    @media screen and (min-width: 1200px) {
-        text-align: start;
-    }
-   
+  text-align: center;
+  @media screen and (min-width: 1200px) {
+    text-align: start;
+  }
 }
 
 .footer-data__mail,
@@ -51,8 +49,7 @@
   display: block;
   @media screen and (min-width: 1200px) {
     text-align: start;
-}
-
+  }
 }
 
 .footer-data__item:not(:last-child) {
@@ -63,22 +60,28 @@
   @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
+    align-items: baseline;
   }
 
   @media screen and (min-width: 1200) {
     display: flex;
     justify-content: start;
   }
-
 }
 
 .footer-social {
   text-align: center;
   margin-bottom: 60px;
-  @media screen and (min-width: 1200) {
-margin-bottom: 0px;  }
 
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0;
+  }
+
+
+  @media screen and (min-width: 1200) {
+    margin-bottom: 0;
+  }
 }
 
 .social-title {
@@ -101,10 +104,9 @@ margin-bottom: 0px;  }
 
 .footer-send {
   text-align: center;
-  @media screen and (min-width: 1200px){
-  margin-left: 93px;
+  @media screen and (min-width: 1200px) {
+    margin-left: 93px;
   }
-    
 }
 
 .footer-send__title {
@@ -120,9 +122,9 @@ margin-bottom: 0px;  }
 .footer-send__fild {
   text-align: center;
 
-  @media screen and (min-width: 1200px){
-  display: flex;
-}
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
 }
 .footer-send__mail {
   background-color: #2f303a;
@@ -139,14 +141,11 @@ margin-bottom: 0px;  }
     width: 450px;
   }
 
-  @media screen and (min-width: 1200px){
-        width: 358px;
-        margin-right: 12px;
-        margin-bottom: 0;
-
-
-}
-
+  @media screen and (min-width: 1200px) {
+    width: 358px;
+    margin-right: 12px;
+    margin-bottom: 0;
+  }
 }
 
 .footer-send__button {
