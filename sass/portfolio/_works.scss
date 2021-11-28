@@ -1,127 +1,180 @@
+.works {
+}
+
 .works-title {
-    font-weight: normal;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
+  font-weight: normal;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
 }
 
 .work-button {
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.63;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: var(--primary-text-color);
-    padding: 6px 22px;
-    background: #f5f4fa;
-    border-radius: 4px;
-    border: 1px solid rgba(0, 0, 0, 0.02);
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    &:hover,
-    &:focus {
-        color: #ffffff;
-        background-color: var(--accent-text-color);
-        box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
-            0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-    }
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+  padding: 6px 22px;
+  background: #f5f4fa;
+  border-radius: 4px;
+  border: 1px solid rgba(0, 0, 0, 0.02);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    color: #ffffff;
+    background-color: var(--accent-text-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
 }
 
 .works-filters {
-    display: flex;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  margin-bottom: 40px;
+
+  @media screen and (min-width: 768px) {
     justify-content: center;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 34px;
+  }
 }
 
-.works-filter:not(:last-child) {
+.works-filter {
+  &:not(:nth-child(2n + 3)) {
     margin-right: 8px;
+  }
+  &:nth-child(-n + 3) {
+    margin-bottom: 15px;
+  }
+  @media screen and (min-width: 768px) {
+    &:not(:last-child) {
+      margin-right: 8px;
+      margin-bottom: 0;
+    }
+  }
 }
 
 .works-project {
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 2;
-    letter-spacing: 0.06em;
-    color: var(--primary-text-color);
-    margin-bottom: 4px;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--primary-text-color);
+  margin-bottom: 4px;
 }
 
 .works-discription {
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 1.88;
-    letter-spacing: 0.03em;
-    color: var(--secondary-text-color);
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+  color: var(--secondary-text-color);
 }
 
 .works-list {
+  @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
+  }
 }
 
 .works-item {
-    width: calc((100% - 60px) / 3);
-    margin-right: 30px;
-    // &:hover,
-    // &:focus {
-    //     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
-    //         0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-    // }
-    &:nth-child(3n) {
-        margin-right: 0;
+  width: 100%;
+
+  &:not(:last-child) {
+    margin-bottom: 30px;
+  }
+
+  &:nth-child(3n) {
+    margin-right: 0;
+  }
+//   &:not(:nth-last-child(-n + 3)) {
+//     margin-bottom: 30px;
+//   }
+
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 30px) / 2);
+
+    &:nth-child(2n) {
+      margin-left: 30px;
     }
-    &:not(:nth-last-child(-n + 3)) {
-        margin-bottom: 30px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: calc((100% - 2 * 30px) / 3);
+    &:nth-child(2n) {
+        margin-left: 0px;
     }
+    
+    &:not(:nth-child(3n)) {
+      margin-right: 30px;
+    }
+    
+    &:nth-last-child(-n + 3) {
+        margin-bottom: 0px;
+  }
+
+  }
 }
 
-.work-link{
-    display: block;
-    &:hover,
-    &:focus {
-        outline: none;
-        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
-            0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-    }
+.work-link {
+  display: block;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  // flex, flex-direction: column: и height 100%
+
+  &:hover,
+  &:focus {
+    outline: none;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
 }
-
-
 
 .work-img {
-    position: relative;
-    display: inline-block;
-    overflow: hidden;
-    .work-link:hover &::after,
-    .work-link:focus &::after{
-        transform: translateY(0);
-    }
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  .work-link:hover &::after,
+  .work-link:focus &::after {
+    transform: translateY(0);
+  }
 }
 
 .work-img::after {
-    display: inline-block;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(33, 150, 243, 0.9);
-    content: " Мені тринадцятий минало. Я пас ягнята за селом. Чи то так сонечко сіяло, Чи так мені чого було? Мені так любо, любо стало, Неначе в бога.";
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 1.556;
-    letter-spacing: 0.03em;
-    color: #ffffff;
-    padding: 64px 24px;
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(33, 150, 243, 0.9);
+  content: " Мені тринадцятий минало. Я пас ягнята за селом. Чи то так сонечко сіяло, Чи так мені чого було? Мені так любо, любо стало, Неначе в бога.";
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 1.556;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  padding: 64px 24px;
 
-    transform: translateY(100%);
-    transition: transform 250ms;
+  transform: translateY(100%);
+  transition: transform 250ms;
 }
 
 .work-signature {
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-left: 24px;
-    padding-right: auto;
-    border: 1px solid #eeeeee;
-    border-top: none;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 24px;
+  padding-right: auto;
+  border: 1px solid #eeeeee;
+  border-top: none;
+  flex-grow: 1;
 }

@@ -1,337 +1,742 @@
 <!DOCTYPE html>
 <!--Главная 3-->
 <html lang="ru">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Document</title>
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
-			rel="stylesheet"
-		/>
-		<link
-			rel="stylesheet"
-			href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
-			integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
-			crossorigin="anonymous"
-			referrerpolicy="no-referrer"
-		/>
-		<link rel="stylesheet" href="./css/main.min.css" />
-	</head>
-	<body>
-		<!-- header -->
-		<header class="header">
-			<div class="container header-container">
-				<!-- section-nav -->
-				<nav class="header-nav">
-					<a href="./index.html" lang="en" class="logo link"
-						>Web<span class="logo-black">Studio</span></a
-					>
-					<ul class="header-nav__list list">
-						<li class="header-nav__item">
-							<a class="header-nav__link link" href="./index.html">Студия</a>
-						</li>
-						<li class="header-nav__item">
-							<a
-								class="header-nav__link link marker-portfolio"
-								href="./portfolio.html"
-							>
-								Портфолио
-							</a>
-						</li>
-						<li class="header-nav__item">
-							<a class="header-nav__link link" href="">Контакты</a>
-						</li>
-					</ul>
-				</nav>
-				<ul class="header-contacts list">
-					<li class="header-contacts__list">
-						<a
-							class="header-contacts__mail link"
-							href="mailto:info@devstudio.com"
-						>
-							<svg class="header-contacts__icon">
-								<use href="./images/sprite.svg#icon-mailto"></use>
-							</svg>
-							<div class="header-contacts__link">info@devstudio.com</div>
-						</a>
-					</li>
-					<li class="header-contacts__list">
-						<a class="header-contacts__phone link" href="tel:+380961111111">
-							<svg class="header-contacts__icon">
-								<use href="./images/sprite.svg#icon-phone"></use>
-							</svg>
-							<div class="header-contacts__link">+38 096 111 11 11</div>
-						</a>
-					</li>
-				</ul>
-			</div>
-		</header>
-		<main>
-			<!-- ///////////// WORK /////////////-->
-			<section class="works section">
-				<div class="container works-section">
-					<h1 class="works-title visually-hidden">Наши работы</h1>
-					<ul class="works-filters list">
-						<li class="works-filter">
-							<button type="button" class="work-button">Все</button>
-						</li>
-						<li class="works-filter">
-							<button type="button" class="work-button">Веб-сайты</button>
-						</li>
-						<li class="works-filter">
-							<button type="button" class="work-button">Приложения</button>
-						</li>
-						<li class="works-filter">
-							<button type="button" class="work-button">Дизайн</button>
-						</li>
-						<li class="works-filter">
-							<button type="button" class="work-button">Маркетинг</button>
-						</li>
-					</ul>
-					<ul class="works-list list">
-						<li class="works-item">
-							<a class="work-link link" href="">
-								<div class="work-img">
-									<img
-										src="./images/our-work/work1.jpg"
-										alt="Три сотрудника"
-										width="370"
-										height="295"
-									/>
-								</div>
-								<div class="work-signature">
-									<h2 class="works-project">Технокряк</h2>
-									<p class="works-discription">Веб-сайт</p>
-								</div>
-							</a>
-						</li>
-						<li class="works-item">
-							<a class="work-link link" href="">
-								<div class="work-img">
-									<img
-										src="./images/our-work/work2.jpg"
-										alt="Два баскетболиста"
-										width="370"
-										height="295"
-									/>
-								</div>
-								<div class="work-signature">
-									<h2 class="works-project">
-										Постер
-										<span lang="en">New Orlean vs Golden Star</span>
-									</h2>
-									<p class="works-discription">Дизайн</p>
-								</div>
-							</a>
-						</li>
-						<li class="works-item">
-							<a class="work-link link" href="">
-								<div class="work-img">
-									<img
-										src="./images/our-work/work3.jpg"
-										alt="Реклама Морская еда - нарисован лосось"
-										width="370"
-										height="295"
-									/>
-								</div>
-								<div class="work-signature">
-									<h2 class="works-project">
-										Ресторан <span lang="en">Seafood</span>
-									</h2>
-									<p class="works-discription">Приложение</p>
-								</div>
-							</a>
-						</li>
-						<li class="works-item">
-							<a class="work-link link" href="">
-								<div class="work-img">
-									<img
-										src="./images/our-work/work4.jpg"
-										alt="Наушники"
-										width="370"
-										height="295"
-									/>
-								</div>
-								<div class="work-signature">
-									<h2 class="works-project">
-										Проект <span lang="en"></span>Prime
-									</h2>
-									<p class="works-discription">Маркетинг</p>
-								</div>
-							</a>
-						</li>
-						<li class="works-item">
-							<a class="work-link link" href="">
-								<div class="work-img">
-									<img
-										src="./images/our-work/work5.jpg"
-										alt="Две коробочки"
-										width="370"
-										height="295"
-									/>
-								</div>
-								<div class="work-signature">
-									<h2 class="works-project">
-										Проект <span lang="en">Boxes</span>
-									</h2>
-									<p class="works-discription">Приложение</p>
-								</div>
-							</a>
-						</li>
-						<li class="works-item">
-							<a class="work-link link" href="">
-								<div class="work-img">
-									<img
-										src="./images/our-work/work6.jpg"
-										alt="Компьютер МАК"
-										width="370"
-										height="295"
-									/>
-								</div>
-								<div class="work-signature">
-									<h2 lang="en" class="works-project">
-										Inspiration has no Borders
-									</h2>
-									<p class="works-discription">Веб-сайт</p>
-								</div>
-							</a>
-						</li>
-						<li class="works-item">
-							<a class="work-link link" href="">
-								<div class="work-img">
-									<img
-										src="./images/our-work/work7.jpg"
-										alt="Развернутая брошура"
-										width="370"
-										height="295"
-									/>
-								</div>
-								<div class="work-signature">
-									<h2 class="works-project">
-										Издание
-										<span lang="en">Limited Edition</span>
-									</h2>
-									<p class="works-discription">Дизайн</p>
-								</div>
-							</a>
-						</li>
-						<li class="works-item">
-							<a class="work-link link" href="">
-								<div class="work-img">
-									<img
-										src="./images/our-work/work8.jpg"
-										alt="Бирка Лабель таг"
-										width="370"
-										height="295"
-									/>
-								</div>
-								<div class="work-signature">
-									<h2 class="works-project">
-										Проект <span lang="en">LAB</span>
-									</h2>
-									<p class="works-discription">Маркетинг</p>
-								</div>
-							</a>
-						</li>
-						<li class="works-item">
-							<a class="work-link link" href="">
-								<div class="work-img">
-									<img
-										src="./images/our-work/work9.jpg"
-										alt="Работает на ноутбуке"
-										width="370"
-										height="295"
-									/>
-								</div>
-								<div class="work-signature">
-									<h2 lang="en" class="works-project">Growing Business</h2>
-									<p class="works-discription">Приложение</p>
-								</div>
-							</a>
-						</li>
-					</ul>
-				</div>
-			</section>
-		</main>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+  <body>
+    <!--header-->
+    <!-- <header class="header">
+      <div class="container header-container">
+        <nav class="header-nav">
+          <a href="./index.html" lang="en" class="logo link"
+            >Web<span class="logo-black">Studio</span></a
+          >
+          <ul class="header-nav__list list">
+            <li class="header-nav__item">
+              <a class="header-nav__link link" href="./index.html">Студия</a>
+            </li>
+            <li class="header-nav__item">
+              <a
+                class="header-nav__link link marker-portfolio"
+                href="./portfolio.html"
+              >
+                Портфолио
+              </a>
+            </li>
+            <li class="header-nav__item">
+              <a class="header-nav__link link" href="">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="header-contacts list">
+          <li class="header-contacts__list">
+            <a
+              class="header-contacts__mail link"
+              href="mailto:info@devstudio.com"
+            >
+              <svg class="header-contacts__icon">
+                <use href="./images/sprite.svg#icon-mailto"></use>
+              </svg>
+              <div class="header-contacts__link">info@devstudio.com</div>
+            </a>
+          </li>
+          <li class="header-contacts__list">
+            <a class="header-contacts__phone link" href="tel:+380961111111">
+              <svg class="header-contacts__icon">
+                <use href="./images/sprite.svg#icon-phone"></use>
+              </svg>
+              <div class="header-contacts__link">+38 096 111 11 11</div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </header> -->
+    <main>
+      <!-------  WORK -------->
+      <section class="works section">
+        <div class="container works-section">
+          <h1 class="works-title visually-hidden">Наши работы</h1>
+          <ul class="works-filters list">
+            <li class="works-filter">
+              <button type="button" class="work-button">Все</button>
+            </li>
+            <li class="works-filter">
+              <button type="button" class="work-button">Веб-сайты</button>
+            </li>
+            <li class="works-filter">
+              <button type="button" class="work-button">Приложения</button>
+            </li>
+            <li class="works-filter">
+              <button type="button" class="work-button">Дизайн</button>
+            </li>
+            <li class="works-filter">
+              <button type="button" class="work-button">Маркетинг</button>
+            </li>
+          </ul>
+          <ul class="works-list list">
+            <li class="works-item">
+              <a class="work-link link" href="">
+                <div class="work-img">
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/our-work/works-1-desktop.webp    1x,
+                        ./images/our-work/works-1-desktop@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/our-work/works-1-desktop.jpg    1x,
+                        ./images/our-work/works-1-desktop@2x.jpg 2x
+                      "
+                    />
 
-		<!--footer-->
-		<footer class="footer">
-			<div class="container footer-section">
-				<div>
-					<a href="./index.html" lang="en" class="logo link footer-logo"
-						>Web<span class="logo-white">Studio</span></a
-					>
-					<address class="footer-data">
-						<ul class="footer-data__list list">
-							<li class="footer-data__item">
-								<a
-									href="https://goo.gl/maps/pQ1iqYw23tvZCVZEA"
-									class="link footer-data__address"
-									>г. Киев, пр-т Леси Украинки, 26</a
-								>
-							</li>
-							<li class="footer-data__item">
-								<a href="mailto:info@example.com" class="footer-data__mail link"
-									>info@example.com</a
-								>
-							</li>
-							<li class="footer-data__item">
-								<a href="tel:+380991111111" class="footer-data__phone link"
-									>+38 099 111 11 11</a
-								>
-							</li>
-						</ul>
-					</address>
-				</div>
-				<div class="social">
-					<p class="social-title">Присоединяйтесь</p>
-					<ul class="cocial-icons list">
-						<li class="cocial-icons__zone">
-							<a href="" class="cocial-icons__link social-link link">
-								<svg class="team-icon__pic">
-									<use href="./images/sprite.svg#icon-instagram"></use>
-								</svg>
-							</a>
-						</li>
-						<li class="cocial-icons__zone">
-							<a href="" class="cocial-icons__link link">
-								<svg class="team-icon__pic">
-									<use href="./images/sprite.svg#icon-twitter"></use>
-								</svg>
-							</a>
-						</li>
-						<li class="cocial-icons__zone">
-							<a href="" class="cocial-icons__link link">
-								<svg class="team-icon__pic">
-									<use href="./images/sprite.svg#icon-facebook"></use>
-								</svg>
-							</a>
-						</li>
-						<li class="cocial-icons__zone">
-							<a href="" class="cocial-icons__link link">
-								<svg class="team-icon__pic">
-									<use href="./images/sprite.svg#icon-linkedin"></use>
-								</svg>
-							</a>
-						</li>
-					</ul>
-				</div>
-				<form class="footer-send" action="#">
-					<p class="footer-send__title">подпишитесь на рассылку</p>
-					<div class="footer-send__fild">
-						<input
-							class="footer-send__mail"
-							type="email"
-							placeholder="E-mail"
-						/>
-						<button class="button-blue">Подписаться</button>
-					</div>
-				</form>
-			</div>
-		</footer>
-	</body>
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/our-work/works-1-tablet.webp    1x,
+                        ./images/our-work/works-1-tablet@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/our-work/works-1-tablet.jpg    1x,
+                        ./images/our-work/works-1-tablet@2x.jpg 2x
+                      "
+                    />
+
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/our-work/works-1.webp    1x,
+                        ./images/our-work/works-1@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/our-work/works-1.jpg    1x,
+                        ./images/our-work/works-1@2x.jpg 2x
+                      "
+                    />
+                    <img src="#" alt="Три сотрудника" loading="lazy" />
+                  </picture>
+                </div>
+                <div class="work-signature">
+                  <h2 class="works-project">Технокряк</h2>
+                  <p class="works-discription">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+            <li class="works-item">
+              <a class="work-link link" href="">
+                <div class="work-img">
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/our-work/works-2-desktop.webp    1x,
+                        ./images/our-work/works-2-desktop@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/our-work/works-2-desktop.jpg    1x,
+                        ./images/our-work/works-2-desktop@2x.jpg 2x
+                      "
+                    />
+
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/our-work/works-2-tablet.webp    1x,
+                        ./images/our-work/works-2-tablet@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/our-work/works-2-tablet.jpg    1x,
+                        ./images/our-work/works-2-tablet@2x.jpg 2x
+                      "
+                    />
+
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/our-work/works-2.webp    1x,
+                        ./images/our-work/works-2@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/our-work/works-2.jpg    1x,
+                        ./images/our-work/works-2@2x.jpg 2x
+                      "
+                    />
+                    <img src="#" alt="Два баскетболиста" loading="lazy" />
+                  </picture>
+                </div>
+                <div class="work-signature">
+                  <h2 class="works-project">
+                    Постер
+                    <span lang="en">New Orlean vs Golden Star</span>
+                  </h2>
+                  <p class="works-discription">Дизайн</p>
+                </div>
+              </a>
+            </li>
+            <li class="works-item">
+              <a class="work-link link" href="">
+                <div class="work-img">
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/our-work/works-3-desktop.webp    1x,
+                        ./images/our-work/works-3-desktop@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/our-work/works-3-desktop.jpg    1x,
+                        ./images/our-work/works-3-desktop@2x.jpg 2x
+                      "
+                    />
+
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/our-work/works-3-tablet.webp    1x,
+                        ./images/our-work/works-3-tablet@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/our-work/works-3-tablet.jpg    1x,
+                        ./images/our-work/works-3-tablet@2x.jpg 2x
+                      "
+                    />
+
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/our-work/works-3.webp    1x,
+                        ./images/our-work/works-3@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/our-work/works-3.jpg    1x,
+                        ./images/our-work/works-3@2x.jpg 2x
+                      "
+                    />
+                    <img
+                      src="#"
+                      alt="Реклама Морская еда - нарисован лосось"
+                      loading="lazy"
+                    />
+                  </picture>
+                </div>
+                <div class="work-signature">
+                  <h2 class="works-project">
+                    Ресторан <span lang="en">Seafood</span>
+                  </h2>
+                  <p class="works-discription">Приложение</p>
+                </div>
+              </a>
+            </li>
+            <li class="works-item">
+              <a class="work-link link" href="">
+                <div class="work-img">
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/our-work/works-4-desktop.webp    1x,
+                        ./images/our-work/works-4-desktop@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/our-work/works-4-desktop.jpg    1x,
+                        ./images/our-work/works-4-desktop@2x.jpg 2x
+                      "
+                    />
+
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/our-work/works-4-tablet.webp    1x,
+                        ./images/our-work/works-4-tablet@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/our-work/works-4-tablet.jpg    1x,
+                        ./images/our-work/works-4-tablet@2x.jpg 2x
+                      "
+                    />
+
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/our-work/works-4.webp    1x,
+                        ./images/our-work/works-4@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/our-work/works-4.jpg    1x,
+                        ./images/our-work/works-4@2x.jpg 2x
+                      "
+                    />
+                    <img src="#" alt="Наушники" loading="lazy" />
+                  </picture>
+                </div>
+                <div class="work-signature">
+                  <h2 class="works-project">
+                    Проект <span lang="en"></span>Prime
+                  </h2>
+                  <p class="works-discription">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+            <li class="works-item">
+              <a class="work-link link" href="">
+                <div class="work-img">
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/our-work/works-5-desktop.webp    1x,
+                        ./images/our-work/works-5-desktop@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/our-work/works-5-desktop.jpg    1x,
+                        ./images/our-work/works-5-desktop@2x.jpg 2x
+                      "
+                    />
+
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/our-work/works-5-tablet.webp    1x,
+                        ./images/our-work/works-5-tablet@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/our-work/works-5-tablet.jpg    1x,
+                        ./images/our-work/works-5-tablet@2x.jpg 2x
+                      "
+                    />
+
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/our-work/works-5.webp    1x,
+                        ./images/our-work/works-5@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/our-work/works-5.jpg    1x,
+                        ./images/our-work/works-5@2x.jpg 2x
+                      "
+                    />
+                    <img src="#" alt="Две коробочки" loading="lazy" />
+                  </picture>
+                </div>
+                <div class="work-signature">
+                  <h2 class="works-project">
+                    Проект <span lang="en">Boxes</span>
+                  </h2>
+                  <p class="works-discription">Приложение</p>
+                </div>
+              </a>
+            </li>
+            <li class="works-item">
+              <a class="work-link link" href="">
+                <div class="work-img">
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/our-work/works-6-desktop.webp    1x,
+                        ./images/our-work/works-6-desktop@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/our-work/works-6-desktop.jpg    1x,
+                        ./images/our-work/works-6-desktop@2x.jpg 2x
+                      "
+                    />
+
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/our-work/works-6-tablet.webp    1x,
+                        ./images/our-work/works-6-tablet@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/our-work/works-6-tablet.jpg    1x,
+                        ./images/our-work/works-6-tablet@2x.jpg 2x
+                      "
+                    />
+
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/our-work/works-6.webp    1x,
+                        ./images/our-work/works-6@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/our-work/works-6.jpg    1x,
+                        ./images/our-work/works-6@2x.jpg 2x
+                      "
+                    />
+                    <img src="#" alt="Компьютер МАК" loading="lazy" />
+                  </picture>
+                </div>
+                <div class="work-signature">
+                  <h2 lang="en" class="works-project">
+                    Inspiration has no Borders
+                  </h2>
+                  <p class="works-discription">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+            <li class="works-item">
+              <a class="work-link link" href="">
+                <div class="work-img">
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/our-work/works-7-desktop.webp    1x,
+                        ./images/our-work/works-7-desktop@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/our-work/works-7-desktop.jpg    1x,
+                        ./images/our-work/works-7-desktop@2x.jpg 2x
+                      "
+                    />
+
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/our-work/works-7-tablet.webp    1x,
+                        ./images/our-work/works-7-tablet@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/our-work/works-7-tablet.jpg    1x,
+                        ./images/our-work/works-7-tablet@2x.jpg 2x
+                      "
+                    />
+
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/our-work/works-7.webp    1x,
+                        ./images/our-work/works-7@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/our-work/works-7.jpg    1x,
+                        ./images/our-work/works-7@2x.jpg 2x
+                      "
+                    />
+                    <img src="#" alt="Развернутая брошура" loading="lazy" />
+                  </picture>
+                </div>
+                <div class="work-signature">
+                  <h2 class="works-project">
+                    Издание
+                    <span lang="en">Limited Edition</span>
+                  </h2>
+                  <p class="works-discription">Дизайн</p>
+                </div>
+              </a>
+            </li>
+            <li class="works-item">
+              <a class="work-link link" href="">
+                <div class="work-img">
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/our-work/works-8-desktop.webp    1x,
+                        ./images/our-work/works-8-desktop@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/our-work/works-8-desktop.jpg    1x,
+                        ./images/our-work/works-8-desktop@2x.jpg 2x
+                      "
+                    />
+
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/our-work/works-8-tablet.webp    1x,
+                        ./images/our-work/works-8-tablet@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/our-work/works-8-tablet.jpg    1x,
+                        ./images/our-work/works-8-tablet@2x.jpg 2x
+                      "
+                    />
+
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/our-work/works-8.webp    1x,
+                        ./images/our-work/works-8@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/our-work/works-8.jpg    1x,
+                        ./images/our-work/works-8@2x.jpg 2x
+                      "
+                    />
+                    <img src="#" alt="Бирка Лабель таг" loading="lazy" />
+                  </picture>
+                </div>
+                <div class="work-signature">
+                  <h2 class="works-project">
+                    Проект <span lang="en">LAB</span>
+                  </h2>
+                  <p class="works-discription">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+            <li class="works-item">
+              <a class="work-link link" href="">
+                <div class="work-img">
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/our-work/works-9-desktop.webp    1x,
+                        ./images/our-work/works-9-desktop@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/our-work/works-9-desktop.jpg    1x,
+                        ./images/our-work/works-9-desktop@2x.jpg 2x
+                      "
+                    />
+
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/our-work/works-9-tablet.webp    1x,
+                        ./images/our-work/works-9-tablet@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/our-work/works-9-tablet.jpg    1x,
+                        ./images/our-work/works-9-tablet@2x.jpg 2x
+                      "
+                    />
+
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/our-work/works-9.webp    1x,
+                        ./images/our-work/works-9@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/our-work/works-9.jpg    1x,
+                        ./images/our-work/works-9@2x.jpg 2x
+                      "
+                    />
+                    <img src="#" alt="Работает на ноутбуке" loading="lazy" />
+                  </picture>
+                </div>
+                <div class="work-signature">
+                  <h2 lang="en" class="works-project">Growing Business</h2>
+                  <p class="works-discription">Приложение</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <!--footer-->
+    <footer class="footer">
+      <div class="container footer-section">
+        <div class="footer-card">
+          <a href="./index.html" lang="en" class="logo link footer-logo"
+            >Web<span class="logo-white">Studio</span></a
+          >
+          <address class="footer-data">
+            <ul class="footer-data__list list">
+              <li class="footer-data__item">
+                <a
+                  href="https://goo.gl/maps/pQ1iqYw23tvZCVZEA"
+                  class="link footer-data__address"
+                  >г. Киев, пр-т Леси Украинки, 26</a
+                >
+              </li>
+              <li class="footer-data__item">
+                <a href="mailto:info@example.com" class="footer-data__mail link"
+                  >info@example.com</a
+                >
+              </li>
+              <li class="footer-data__item">
+                <a href="tel:+380991111111" class="footer-data__phone link"
+                  >+38 099 111 11 11</a
+                >
+              </li>
+            </ul>
+          </address>
+        </div>
+        <div class="footer-social">
+          <p class="social-title">Присоединяйтесь</p>
+          <ul class="cocial-icons list">
+            <li class="cocial-icons__zone">
+              <a href="" class="cocial-icons__link link">
+                <svg class="team-icon__pic">
+                  <use href="./images/sprite.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="cocial-icons__zone">
+              <a href="" class="cocial-icons__link link">
+                <svg class="team-icon__pic">
+                  <use href="./images/sprite.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="cocial-icons__zone">
+              <a href="" class="cocial-icons__link link">
+                <svg class="team-icon__pic">
+                  <use href="./images/sprite.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="cocial-icons__zone">
+              <a href="" class="cocial-icons__link link">
+                <svg class="team-icon__pic">
+                  <use href="./images/sprite.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <form class="footer-send" action="#">
+          <p class="footer-send__title">подпишитесь на рассылку</p>
+          <div class="footer-send__fild">
+            <input
+              class="footer-send__mail"
+              type="email"
+              placeholder="E-mail"
+              name="footer-user-mail"
+            />
+            <button class="button-blue footer-send__button">
+              <span class="footer-send__name">Подписаться</span>
+              <svg class="footer-send__telegram">
+                <use href="./images/sprite.svg#icon-telegram"></use>
+              </svg>
+            </button>
+          </div>
+        </form>
+      </div>
+    </footer>
+  </body>
 </html>
